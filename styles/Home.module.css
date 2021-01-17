@@ -1,0 +1,82 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.title{
+    font-family: 'Press Start 2P', cursive;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.about {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+.description {
+    color: #333;
+}
+
+.downloadBtn {
+  background-color: rgb(119, 0, 153);
+  color: white;
+  border: none;
+}
+
+.tutorialBtn {
+  background: none;
+  border: 1px solid rgb(119, 0, 153);
+  color: rgb(119, 0, 153);
+}
+
+.downloadBtn,
+.tutorialBtn {
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 5px;
+    outline: none;
+
+    transition: transform 200ms;
+}
+
+.downloadBtn:hover,
+.tutorialBtn:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    display: flex;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.6);
+    border-radius: 5px;
+    position: relative;
+}
+
+.gif {
+    width: 300px;
+    height: 200px;
+    background-color: gray;
+}
+
+.play {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #842785;
+    position: absolute;
+    z-index: 10;
+    top: 75px;
+    left: 275px;
+}
+
+.content {
+    width: 300px;
+    height: 200px;
+}

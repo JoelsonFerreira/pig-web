@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.navbar {
+    position: sticky;
+    top: 0;
+
+    width: 100vw;
+
+    background-color: rgb(119, 0, 153);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Press Start 2P', cursive;
+}
+
+.menu {
+    display: flex;
+}
+
+.item {
+    padding: 20px;
+    color: white;
+
+    font-size: 0.7rem;
+
+    cursor: pointer;
+
+    transition: background 200ms;
+}
+
+.item:hover {
+    background-color: #842785;
+    border-radius: 5px;
+}
+
+.cantos {
+    width: 200px;
+    margin: 0 20px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: white;
+}
+
+.logo {
+    filter: brightness(0) invert(1);
+}
