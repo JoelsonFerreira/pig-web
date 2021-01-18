@@ -9,7 +9,7 @@ export default function NavBar() {
             <div className={styles.cantos}>
                 <Link href="/">
                     <a>
-                        <Image className={styles.logo} src="/Icon/safari-pinned-tab.svg" width={50} height={50} ></Image>
+                        <Image className={styles.logo} src="/icon/safari-pinned-tab.svg" width={50} height={50} ></Image>
                     </a>
                 </Link>
             </div>
