@@ -48,3 +48,9 @@
 .logo {
     filter: brightness(0) invert(1);
 }
+
+@media (max-width: 950px) {
+    .menu {
+        display: none;
+    }
+}

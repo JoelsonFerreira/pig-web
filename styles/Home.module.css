@@ -39,7 +39,9 @@
 .tutorialBtn {
     display: inline-block;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 10px 0;
+    max-width: 150px;
+    width: calc(100vw - 20px);
     margin: 0 10px;
     border-radius: 5px;
     outline: none;
@@ -60,7 +62,8 @@
 }
 
 .gif {
-    width: 300px;
+    width: calc(50vw - 5px);
+    max-width: 300px;
     height: 200px;
     background-color: gray;
 }
@@ -73,10 +76,11 @@
     position: absolute;
     z-index: 10;
     top: 75px;
-    left: 275px;
+    left: min(calc(50vw - 30px), 275px);
 }
 
 .content {
-    width: 300px;
+    width: calc(50vw - 5px);
+    max-width: 300px;
     height: 200px;
 }
