@@ -1,7 +1,6 @@
 import styles from "../styles/Nav.module.css";
 
 import Link from "next/link";
-import Image from "next/image";
 
 export default function NavBar() {
     return (
@@ -9,7 +8,7 @@ export default function NavBar() {
             <div className={styles.cantos}>
                 <Link href="/">
                     <a>
-                        <Image className={styles.logo} src="/icon/safari-pinned-tab.svg" width={50} height={50} ></Image>
+                        <img className={styles.logo} src="/icon/safari-pinned-tab.svg" width={50} height={50} ></img>
                     </a>
                 </Link>
             </div>

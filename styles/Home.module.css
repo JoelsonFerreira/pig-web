@@ -13,14 +13,15 @@
 
 .about {
     padding: 50px 0;
-    margin: 0 auto;
-    width: 100%;
+    margin: 10px auto;
+    width: calc(100% - 50px);
     max-width: 900px;
     text-align: center;
 }
 
 .description {
     color: #333;
+    margin-bottom: 40px;
 }
 
 .downloadBtn {
@@ -51,36 +52,5 @@
 
 .downloadBtn:hover,
 .tutorialBtn:hover {
-    transform: scale(1.1);
-}
-
-.card {
-    display: flex;
-    box-shadow: 0 0 5px 0 rgba(0,0,0,.6);
-    border-radius: 5px;
-    position: relative;
-}
-
-.gif {
-    width: calc(50vw - 5px);
-    max-width: 300px;
-    height: 200px;
-    background-color: gray;
-}
-
-.play {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #842785;
-    position: absolute;
-    z-index: 10;
-    top: 75px;
-    left: min(calc(50vw - 30px), 275px);
-}
-
-.content {
-    width: calc(50vw - 5px);
-    max-width: 300px;
-    height: 200px;
+    transform: scale(1.02);
 }
