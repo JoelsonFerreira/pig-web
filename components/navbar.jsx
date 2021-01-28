@@ -2,7 +2,20 @@ import styles from "../styles/Nav.module.css";
 
 import Link from "next/link";
 
+import { useState } from "react";
+
 export default function NavBar() {
+
+    const [ displayMenu, setDisplayMenu  ] = useState("-200px");
+
+    function toggleMenu() {
+        if(displayMenu == "-200px") {
+            setDisplayMenu("50px");
+        } else {
+            setDisplayMenu("-200px");
+        }
+    }
+
     return (
         <nav className={styles.navbar}>
             <div className={styles.cantos}>
@@ -11,8 +24,13 @@ export default function NavBar() {
                         <img className={styles.logo} src="/icon/safari-pinned-tab.svg" width={50} height={50} ></img>
                     </a>
                 </Link>
+                <button className={styles.hamburguer} onClick={toggleMenu}>
+                    <div className={styles.line}></div>
+                    <div className={styles.line}></div>
+                    <div className={styles.line}></div>
+                </button>
             </div>
-            <div className={styles.menu}>
+            <div className={styles.menu} style={{top: displayMenu}}>
                 <Link href="/">
                     <a className={styles.item}>Home</a>
                 </Link>

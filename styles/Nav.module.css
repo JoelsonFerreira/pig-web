@@ -3,7 +3,7 @@
 .navbar {
     position: sticky;
     top: 0;
-    z-index: 20;
+    z-index: 10;
 
     width: 100%;
 
@@ -50,8 +50,57 @@
     filter: brightness(0) invert(1);
 }
 
+.hamburguer {
+    display: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.line {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+}
+
+.line:nth-child(2) {
+    margin: 5px 0;
+}
+
 @media (max-width: 950px) {
+    .hamburguer {
+        display: block;
+    }
+
+    .navbar {
+        position: relative;
+    }
+
+    .menu { 
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: -200px;
+        background-color: #770099;
+        transition: top 1s;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .cantos {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #770099;
+    }
+
     .menu {
-        display: none;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
     }
 }

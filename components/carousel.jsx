@@ -74,8 +74,8 @@ export default function Carousel({users}) {
             <div style={{display: "flex", justifyContent: "center"}}>
                 {users.map((user, index) => (
                     index == -pos ? 
-                        <Indicator color="#770099" onClick={() => setPos(-index)} /> : 
-                        <Indicator color="#ccc" onClick={() => setPos(-index)} />
+                        <Indicator key={index} color="#770099" onClick={() => setPos(-index)} /> : 
+                        <Indicator key={index} color="#ccc"    onClick={() => setPos(-index)} />
                 ))}
             </div>
         </div>
