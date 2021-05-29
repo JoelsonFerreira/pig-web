@@ -1,13 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 10;
+    max-width: 1400px;
 
-    width: 100%;
-
-    background-color: rgb(119, 0, 153);
+    margin: auto;
 
     display: flex;
     justify-content: space-between;
@@ -38,12 +34,6 @@
 
 .cantos {
     width: 200px;
-    margin: 0 20px;
-
-    font-size: 1rem;
-    font-weight: 600;
-
-    color: white;
 }
 
 .logo {

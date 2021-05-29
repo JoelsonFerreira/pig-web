@@ -3,8 +3,10 @@ import NavBar from "../components/navbar";
 export default function Download() {
     return (
         <div>
-            <NavBar />
-            <h1>Instalação</h1>
+            <header>
+                <NavBar />
+            </header>
+            <h1>Downloads</h1>
         </div>
     )
 }

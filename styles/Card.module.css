@@ -1,25 +1,25 @@
 .carousel {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    width: 1200px;
-    height: 506px;
+    width: calc(100% - 2*62px);
+    height: 500px;
 
-    background-color: #f8f8f8;
+    background-color: #fcfcfc;
 
-    border-radius: 3px;
+    border-radius: 10px;
 
-    box-shadow: 0 0 20px rgba(0, 0, 0, .18);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .18);
 
     display: flex;
     position: relative;
 
     overflow-x: hidden;
 }
-
 
 .card {
     height: 100%;
@@ -32,7 +32,7 @@
 }
 
 .profile {
-    width: 300px;
+    width: 395px;
     height: 100%;
 
     display: flex;
@@ -90,14 +90,14 @@
 
     border-radius: 0 3px 3px 0;
 
-    width: 900px;
+    height: 100%;
+    width: 880px;
 }
 
 .button {
     border: none;
     background: none;
     outline: none;
-    margin: 0 10px;
     cursor: pointer;
 }
 

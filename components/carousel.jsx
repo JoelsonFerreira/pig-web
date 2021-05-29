@@ -24,14 +24,24 @@ export default function Carousel({users}) {
 
     const [pos, setPos]     = useState(0);
     const [width, setWidth] = useState(0);
+    const [winWidth, setWinWidth] = useState(0);
     
     const cardRef = useRef(null);
+
+    const updateWindowDimensions = () => {
+        const newWidth = window.innerWidth;
+        setWinWidth(newWidth);
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', updateWindowDimensions);
+    }, []);
     
     useEffect(() => {
         if(cardRef.current) {
             setWidth(cardRef.current.offsetWidth);
         }
-    }, [cardRef.current]);
+    }, [cardRef.current, winWidth]);
 
     function prev() {
         if(pos + 1 <= 0)

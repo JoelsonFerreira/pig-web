@@ -1,0 +1,44 @@
+
+.container main {
+    display: flex;
+}
+
+.container section {
+    margin: 30px;
+}
+
+.container aside {
+    border-right: 1px solid lightgray;
+}
+
+.container ul {
+    margin: 0;
+    padding: 0;
+}
+
+.container > main a {
+    display: block;
+    width: 300px;
+    padding: 20px 0;
+    cursor: pointer;
+    text-align: center;
+
+    transition: all 200ms;
+}
+
+.container > main > aside > ul > li > a:hover {
+    background-color: rgb(119, 0, 153);
+    color: white;
+}
+
+.sublist {
+    background-color: #eee;
+    display: none;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+
+.sublist a:hover {
+    background-color: #842785;
+    color: white;
+}
