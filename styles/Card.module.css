@@ -99,6 +99,7 @@
     background: none;
     outline: none;
     cursor: pointer;
+    padding: 0;
 }
 
 @media (max-width: 1440px) {

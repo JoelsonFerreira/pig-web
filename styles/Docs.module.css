@@ -8,7 +8,8 @@
 }
 
 .container aside {
-    border-right: 1px solid lightgray;
+    height: calc(100vh - 51px);
+    overflow-y: scroll;
 }
 
 .container ul {
@@ -26,6 +27,10 @@
     transition: all 200ms;
 }
 
+.container > main > aside > ul {
+    border-right: 1px solid lightgray;
+}
+
 .container > main > aside > ul > li > a:hover {
     background-color: rgb(119, 0, 153);
     color: white;
@@ -35,7 +40,8 @@
     background-color: #eee;
     display: none;
     border-radius: 0 0 10px 10px;
-    overflow: hidden;
+    /* overflow-y: scroll;
+    max-height: 500px; */
 }
 
 .sublist a:hover {

@@ -61,7 +61,7 @@ export default function Carousel({users}) {
         <div>
             <div className={styles.carousel}>
                 <button className={styles.button} onClick={prev}>
-                    <IoIosArrowBack size={50} color="#555" />
+                    <IoIosArrowBack size={50} color="#777" />
                 </button>
 
                 <div className={styles.container} ref={cardRef}>
@@ -78,7 +78,7 @@ export default function Carousel({users}) {
                 </div>
                 
                 <button className={styles.button} onClick={next}>
-                    <IoIosArrowForward size={50} color="#555" />
+                    <IoIosArrowForward size={50} color="#777" />
                 </button>
             </div>
             <div style={{display: "flex", justifyContent: "center"}}>

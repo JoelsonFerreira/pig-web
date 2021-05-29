@@ -19,9 +19,9 @@ export default function Home({users}) {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum cursus turpis ac sagittis. Duis erat arcu, efficitur id nibh nec, fringilla semper nisi. Phasellus semper enim sit amet sapien egestas, sed commodo neque efficitur. Integer fermentum enim ante, vel ullamcorper mauris blandit ac. Ut malesuada dignissim metus non iaculis. Sed eu justo tortor. Vivamus nec sollicitudin eros. Donec semper varius augue nec sagittis. Nulla facilisi. Phasellus sed lectus vel eros posuere commodo.
           </p>
           <div>
-              <a href="https://github.com/PIGDevUff/PigDev" className={styles.downloadBtn} target="blank">
-                Download
-              </a>
+            <a href="https://github.com/PIGDevUff/PigDev" className={styles.downloadBtn} target="blank">
+              Download
+            </a>
 
             <Link href="/tutorial">
               <a className={styles.tutorialBtn}>

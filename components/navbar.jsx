@@ -34,9 +34,9 @@ export default function NavBar() {
                 <Link href="/">
                     <a className={styles.item}>Home</a>
                 </Link>
-                <Link href="https://github.com/PIGDevUff/PigDev">
+                {/* <Link href="https://github.com/PIGDevUff/PigDev">
                     <a className={styles.item} target="blank">Downloads</a>
-                </Link>
+                </Link> */}
                 <Link href="/docs">
                     <a className={styles.item}>Documentação</a>
                 </Link>
@@ -47,7 +47,12 @@ export default function NavBar() {
                     <a className={styles.item}>Instalação</a>
                 </Link>
             </div>
-            <div className={styles.cantos}></div>
+            <div className={styles.cantos}>
+                <a href="https://github.com/PIGDevUff/PigDev" className={styles.downloadBtn} target="blank">
+                    <img src="./icon/github.svg" width={25} alt="github icon" />
+                    Download
+                </a>
+            </div>
         </nav>
     )
 }

@@ -8,8 +8,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    font-family: 'Press Start 2P', cursive;
 }
 
 .menu {
@@ -23,6 +21,8 @@
     font-size: 0.7rem;
 
     cursor: pointer;
+
+    font-family: 'Press Start 2P', cursive;
 
     transition: background 200ms;
 }
@@ -55,6 +55,22 @@
 
 .line:nth-child(2) {
     margin: 5px 0;
+}
+
+.downloadBtn {
+    background-color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: #770099;
+    font-weight: 600;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 160px;
+
+    margin-left: auto;
 }
 
 @media (max-width: 950px) {
