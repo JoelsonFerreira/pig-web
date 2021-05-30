@@ -40,11 +40,53 @@
     background-color: #eee;
     display: none;
     border-radius: 0 0 10px 10px;
-    /* overflow-y: scroll;
-    max-height: 500px; */
+    overflow-y: scroll;
+    max-height: 500px;
 }
 
 .sublist a:hover {
     background-color: #842785;
     color: white;
+}
+
+.menuButton {
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .container aside {
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        width: 100vw;
+        height: calc(100vh - 54px);
+        background-color: #770099;
+        color: white;
+    }
+
+    .container > main > aside > ul {
+        border: none;
+    }
+
+    .container aside a {
+        width: 100%;
+    }
+
+    .sublist {
+        background-color: #842785;
+    }
+
+    .menuButton {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #770099;
+        border: none;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
 }

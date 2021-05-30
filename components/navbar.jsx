@@ -24,19 +24,11 @@ export default function NavBar() {
                         <img className={styles.logo} src="/icon/safari-pinned-tab.svg" width={50} height={50} ></img>
                     </a>
                 </Link>
-                <button className={styles.hamburguer} onClick={toggleMenu}>
-                    <div className={styles.line}></div>
-                    <div className={styles.line}></div>
-                    <div className={styles.line}></div>
-                </button>
             </div>
             <div className={styles.menu} style={{top: displayMenu}}>
                 <Link href="/">
                     <a className={styles.item}>Home</a>
                 </Link>
-                {/* <Link href="https://github.com/PIGDevUff/PigDev">
-                    <a className={styles.item} target="blank">Downloads</a>
-                </Link> */}
                 <Link href="/docs">
                     <a className={styles.item}>Documentação</a>
                 </Link>
@@ -50,8 +42,13 @@ export default function NavBar() {
             <div className={styles.cantos}>
                 <a href="https://github.com/PIGDevUff/PigDev" className={styles.downloadBtn} target="blank">
                     <img src="./icon/github.svg" width={25} alt="github icon" />
-                    Download
+                    Baixar
                 </a>
+                <button className={styles.hamburguer} onClick={toggleMenu}>
+                    <div className={styles.line}></div>
+                    <div className={styles.line}></div>
+                    <div className={styles.line}></div>
+                </button>
             </div>
         </nav>
     )

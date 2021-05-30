@@ -1,10 +1,12 @@
 import NavBar from "../components/navbar";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import styles from "../styles/Docs.module.css";
 
 export default function Download() {
     const [selectedItem, setSelectedItem] = useState("");
+
+    const menuRef = useRef(null);
 
     const items = [{
             key: "Objetos",
@@ -66,8 +68,18 @@ export default function Download() {
         }
     ];
 
+    const toggleMenu = () => {
+        console.log(menuRef.current.display);
+
+        if(menuRef.current.style.display == "block") {
+            menuRef.current.style.display = "none";
+        } else {
+            menuRef.current.style.display = "block";
+        }
+    }
+
     const menu = items.map(item => (
-        <li>
+        <li key={item.key}>
             <a onClick={e => {
                 if(selectedItem != item.key)
                     setSelectedItem(item.key);
@@ -80,11 +92,11 @@ export default function Download() {
             {
                 selectedItem == item.key ?
                     <ul style={{display: "block"}} className={styles.sublist}>
-                        {item.items.map(subitem => <li><a>{subitem}</a></li>)}
+                        {item.items.map((subitem, index) => <li key={index}><a>{subitem}</a></li>)}
                     </ul>
                 :
                     <ul className={styles.sublist}>
-                        {item.items.map(subitem => <li><a>{subitem}</a></li>)}
+                        {item.items.map((subitem, index) => <li key={index}><a>{subitem}</a></li>)}
                     </ul>
             }
         </li>
@@ -96,7 +108,7 @@ export default function Download() {
                 <NavBar />
             </header>
             <main>
-                <aside>
+                <aside ref={menuRef}>
                     <ul>
                         {menu}
                     </ul>
@@ -105,6 +117,7 @@ export default function Download() {
                     ishaidiansdmaosmdm
                 </section>
             </main>
+            <button className={styles.menuButton} onClick={toggleMenu}></button>
         </div>
     )
 }

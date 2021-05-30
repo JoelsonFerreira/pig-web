@@ -3,6 +3,8 @@
 .navbar {
     max-width: 1400px;
 
+    padding: 0 20px;
+
     margin: auto;
 
     display: flex;
@@ -68,7 +70,7 @@
     align-items: center;
     justify-content: space-between;
 
-    width: 160px;
+    width: 120px;
 
     margin-left: auto;
 }
@@ -76,6 +78,7 @@
 @media (max-width: 950px) {
     .hamburguer {
         display: block;
+        margin-left: 20px;
     }
 
     .navbar {
@@ -88,25 +91,32 @@
         left: 0;
         top: -200px;
         background-color: #770099;
-        transition: top 1s;
-    }
-
-    .navbar {
+        transition: top 200ms;
+        width: 100%;
         flex-direction: column;
+        text-align: center;
     }
 
     .cantos {
         width: 100%;
-        padding: 0 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: #770099;
     }
+}
 
-    .menu {
-        width: 100%;
-        flex-direction: column;
-        text-align: center;
+@media (max-width: 350px) {
+    .downloadBtn {
+        width: 70px;
+        padding: 8px;
+    }    
+    
+    .downloadBtn img {
+        width: 15px;
+    }
+
+    .logo {
+        width: 40px;
     }
 }
