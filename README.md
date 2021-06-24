@@ -5,8 +5,8 @@ A website for presenting the PIG graphic library.
 1. [Technologies](#technologies)
 1. [Features](#features)
 1. [Requisitos](#requirements)
-1. [Executando a aplicação](#running-application)
-1. [Alunos](#contributors)
+1. [Running application](#running-application)
+1. [Contributors](#contributors)
 1. [Preview](#preview)
 
 ## Technologies
