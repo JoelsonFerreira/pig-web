@@ -13,9 +13,9 @@ A website for presenting the PIG graphic library.
 
 * HTML5
 * CSS3
-* Typescript
-* Reactjs
-* Nextjs
+* JavaScript
+  * Reactjs
+  * Nextjs
 
 ## Features
 
